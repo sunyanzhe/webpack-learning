@@ -1,5 +1,5 @@
 import _ from 'loadsh'
-import './style.css'
+import './style.scss'
 
 function component() {
     let element = document.createElement('div');

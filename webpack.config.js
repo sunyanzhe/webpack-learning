@@ -10,15 +10,15 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader"
+                    use: ["css-loader", "sass-loader"]
                 })
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin("stylesheets/[name].css"),
+        new ExtractTextPlugin("style.css"),
     ]
 };
