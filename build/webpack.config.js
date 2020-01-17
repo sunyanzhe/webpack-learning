@@ -21,6 +21,18 @@ module.exports = {
       }
     ]
   },
+  // 设置webpack如何寻找模块对应文件
+  resolve: {
+    // 原路径映射
+    alias: {
+      '@': '../src',
+      'react$': '/path/to/react.min.js'
+    },
+    // 采用第三方模块的那个版本按照顺序找到第一个符合条件的
+    mainFields: ['browser', 'main'],
+    // 在导入语句没带文件后缀时, webpack会自动带上后缀后,去尝试访问文件是否存在
+    extensions: ['.js', '.jsx'],
+  },
   devServer: {
     port: 3000,
     hot: true,
