@@ -8,6 +8,7 @@ module.exports = {
   entry: path.resolve(__dirname, '../src/main.js'),
   output: {
     filename: 'js/[name].[hash:8].js',
+    // chunkFilename: 'js/kk.js',
     path: path.resolve(__dirname, '../dist')    
   },
   module: {
@@ -25,7 +26,7 @@ module.exports = {
     hot: true,
     contentBase: '../dist'
   },
-  devtool: 'source-map',
+  // devtool: 'source-map',
   plugins:[
     new CleanWebpackPlugin(),
     new ExtractTextPlugin({
