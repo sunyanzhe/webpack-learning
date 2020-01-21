@@ -38,6 +38,13 @@ module.exports = {
     hot: true,
     contentBase: '../dist'
   },
+
+  // 不需要将其打进包里面
+  // 与cdn一同使用
+  // externals: {
+  //   jQuery: 'jQuery'
+  // },
+
   // devtool: 'source-map',
   plugins:[
     new CleanWebpackPlugin(),
