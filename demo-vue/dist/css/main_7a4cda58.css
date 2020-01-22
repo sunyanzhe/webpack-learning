@@ -1,0 +1,21 @@
+body {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}.another-h1[data-v-c219e62a] {
+  color: skyblue;
+  font-size: 14px;
+}
+#container[data-v-5ef48958] {
+  height: 300px;
+  color: red;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}

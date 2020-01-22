@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .another-h1 {
     color: skyblue;
     font-size: 14px;

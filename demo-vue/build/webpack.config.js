@@ -60,7 +60,7 @@ module.exports = {
         })
       },
       {
-        test:/\.less$/,
+        test: /\.less$/,
         use: ExtractTextWebpackPlugin.extract({
           use: [
             'css-loader',
